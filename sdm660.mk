@@ -192,6 +192,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.sdm660 \
