@@ -25,6 +25,7 @@ allow hal_fingerprint_sdm660 hal_perf_hwservice:hwservice_manager find;
 binder_call(hal_fingerprint_sdm660, hal_perf_default)
 
 r_dir_file(hal_fingerprint_sdm660, firmware_file)
+r_dir_file(hal_fingerprint_sdm660, sysfs_devfreq)
 set_prop(hal_fingerprint_sdm660, hal_fingerprint_prop)
 
 dontaudit hal_fingerprint_default storage_file:dir search;
