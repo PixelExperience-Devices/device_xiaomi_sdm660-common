@@ -24,7 +24,7 @@ cc_binary {
     relative_install_path: "hw",
     vintf_fragments: ["android.hardware.power@1.3-service.xiaomi_sdm660.xml"],
     init_rc: ["android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr.rc"],
-    srcs: ["service.cpp", "Power.cpp", "InteractionHandler.cpp"],
+    srcs: ["service.cpp", "Power.cpp", "InteractionHandler.cpp", "power-helper.c"],
     cflags: [
         "-Wall",
         "-Werror",
