@@ -9,5 +9,7 @@ allow init adsprpcd_file:file mounton;
 
 allow vendor_init unlabeled:{ dir file } { getattr relabelfrom };
 
+allow init adsprpcd_file:file mounton;
+
 set_prop(vendor_init, freq_prop)
 set_prop(vendor_init, camera_prop)
