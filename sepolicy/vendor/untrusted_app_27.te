@@ -1,0 +1,3 @@
+allow untrusted_app_27 app_data_file:file { execute };
+allow untrusted_app_27 proc_zoneinfo:file { read };
+allow untrusted_app_27 vendor_default_prop:file { read };

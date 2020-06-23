@@ -11,6 +11,13 @@ allow vendor_toolbox vendor_toolbox_exec:file execute_no_trans;
 # Allow vendor_toolbox to read directories in rootfs
 allow vendor_toolbox rootfs:dir r_dir_perms;
 
+allow vendor_toolbox media_rw_data_file:file { getattr };
+allow vendor_toolbox mnt_vendor_file:file { getattr };
+allow vendor_toolbox persist_alarm_file:file { getattr };
+allow vendor_toolbox persist_audio_file:dir { getattr };
+allow vendor_toolbox persist_time_file:file { getattr };
+allow vendor_toolbox sensors_persist_file:file { getattr };
+
 # Allow vendor_toolbox to remove "security.*" xattrs from /mnt/vendor/persist
 allow vendor_toolbox {
     mnt_vendor_file

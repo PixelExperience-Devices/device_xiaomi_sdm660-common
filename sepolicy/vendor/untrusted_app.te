@@ -1,0 +1,7 @@
+allow untrusted_app app_data_file:file { execute };
+allow untrusted_app sysfs_kgsl:dir { search };
+allow untrusted_app vendor_default_prop:file { read open };
+allow untrusted_app proc_qtaguid_stat:file { read };
+allow untrusted_app proc_zoneinfo:file { read };
+allow untrusted_app rootfs:dir { read };
+allow untrusted_app vendor_default_prop:file { getattr };
