@@ -103,7 +103,16 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.preview.ubwc=0 \
     vendor.video.disable.ubwc=1 \
-    vidc.enc.dcvs.extra-buff-count=2
+    vidc.enc.dcvs.extra-buff-count=2 \
+    camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.codeaurora.snapcam \
+    vendor.camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.codeaurora.snapcam \
+    persist.camera.isp.turbo=1 \
+    persist.camera.set.afd=4 \
+    persist.bokeh.switch.lux=290 \
+    persist.camera.auxswitch.threshold=330 \
+    persist.camera.mainswitch.threshold=419 \
+    persist.camera.expose.aux=1
+
 
 # CNE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
