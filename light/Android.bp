@@ -7,9 +7,9 @@
 cc_binary {
     defaults: ["hidl_defaults"],
     name: "android.hardware.light@2.0-service.xiaomi_sdm660",
-    init_rc: ["android.hardware.light@2.0-service.xiaomi_sdm660.rc"],
-    vintf_fragments: ["android.hardware.light@2.0-service.xiaomi_sdm660.xml"],
-    srcs: ["service.cpp", "Light.cpp"],
+    init_rc: ["hidl/android.hardware.light@2.0-service.xiaomi_sdm660.rc"],
+    vintf_fragments: ["hidl/android.hardware.light@2.0-service.xiaomi_sdm660.xml"],
+    srcs: ["hidl/service.cpp", "hidl/Light.cpp"],
     shared_libs: [
         "libbase",
         "libhidlbase",
@@ -18,4 +18,23 @@ cc_binary {
     ],
     relative_install_path : "hw",
     vendor: true,
+}
+
+cc_binary {
+    name: "android.hardware.lights-service.qti",
+    relative_install_path: "hw",
+    init_rc: ["aidl/android.hardware.lights-qti.rc"],
+    vintf_fragments: ["aidl/android.hardware.lights-qti.xml"],
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "liblog",
+        "libhardware",
+        "libbinder_ndk",
+        "android.hardware.light-ndk_platform",
+    ],
+    srcs: [
+        "aidl/Lights.cpp",
+        "aidl/main.cpp",
+    ],
 }
