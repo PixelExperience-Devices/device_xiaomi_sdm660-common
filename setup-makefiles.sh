@@ -28,7 +28,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 LINEAGE_ROOT="$MY_DIR"/../../..
 
-HELPER="$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_utils.sh
+HELPER="$AOSP_ROOT"/vendor/aosp/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -36,7 +36,7 @@ fi
 . "$HELPER"
 
 # Initialize the common helper
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$AOSP_ROOT" true
 
 # Copyright headers and guards
 write_headers "jasmine_sprout jason lavender twolip wayne whyred"
@@ -55,7 +55,7 @@ if [ -s "$MY_DIR"/../$DEVICE_SPECIFIED_COMMON/proprietary-files.txt ]; then
 
     # Reinitialize the helper for device specified common
     INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-    setup_vendor "$DEVICE_SPECIFIED_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
+    setup_vendor "$DEVICE_SPECIFIED_COMMON" "$VENDOR" "$AOSP_ROOT" true
 
     # Copyright headers and guards
     write_headers "$DEVICE_SPECIFIED_COMMON_DEVICE"
@@ -72,7 +72,7 @@ fi
 if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     # Reinitialize the helper for device
     INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-    setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false
+    setup_vendor "$DEVICE" "$VENDOR" "$AOSP_ROOT" false
 
     # Copyright headers and guards
     write_headers
