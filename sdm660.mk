@@ -28,7 +28,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-pe \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -400,10 +400,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
-
-# Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # Vibrator
 PRODUCT_PACKAGES += \
