@@ -328,9 +328,9 @@ vendor/lib64/libmlipay@1.1.so|7d07b19faa36c62babf39a41b2baf8de370d706c
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|2c05d2902c757410aec30c6a5d0bf77b016583fa
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|0c4bb0c8ba1cbf357bb0b5117e93db0382ffcf49
 
-# Perf - from taimen QQ3A.200705.002
-vendor/lib/libqti-perfd-client.so|c1c7482b58fbe012f934b54bea78ff52068ea530
-vendor/lib64/libqti-perfd-client.so|d16c17427d6383368d035c9bf028630837b3b969
+# Perf - from Taimen RP1A.201005.004
+vendor/lib/libqti-perfd-client.so|08b0cd20dbc79645ee73ea4fdc5221d41d09588a
+vendor/lib64/libqti-perfd-client.so|cd3def30b6d444430ea8cea8956623d9d165eb7a
 
 # Peripheral manager - from jasmine
 vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
