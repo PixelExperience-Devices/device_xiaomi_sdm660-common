@@ -3,6 +3,7 @@ allow hal_power_default sysfs_touchpanel:file rw_file_perms;
 
 r_dir_file(hal_power_default, sysfs_graphics)
 
+allow hal_power_default cgroup:file r_file_perms;
 allow hal_power_default { sysfs_devfreq sysfs_kgsl }:dir search;
 allow hal_power_default { sysfs_devfreq sysfs_kgsl }:{ file lnk_file } rw_file_perms;
 allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
