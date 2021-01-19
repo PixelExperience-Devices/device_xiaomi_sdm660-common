@@ -163,7 +163,7 @@
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
-        <item>"/system/lib64/libsurfaceflinger.so"</item>
+        <item>"/system/bin/libsurfaceflinger"</item>
     </string-array>
 
     <!-- List of files pinned by the Pinner Service with the JIT Zygote boot image b/119800099 -->
@@ -174,7 +174,7 @@
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
-        <item>"/system/lib64/libsurfaceflinger.so"</item>
+        <item>"/system/bin/libsurfaceflinger"</item>
     </string-array>
 
     <!-- Should the pinner service pin the Home application? -->
@@ -237,7 +237,6 @@
         <item>"gprs:4092,8760,11680,4096,8760,11680"</item>
         <item>"evdo:4094,87380,524288,4096,16384,262144"</item>
     </string-array>
-
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
