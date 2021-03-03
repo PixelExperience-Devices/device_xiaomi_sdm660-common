@@ -6,3 +6,6 @@ ro.charger.enable_suspend=true
 ro.surface_flinger.supports_background_blur=1
 ro.sf.blurs_are_expensive=1
 persist.sys.sf.disable_blurs=1
+
+# IORap app launch prefetching using Perfetto traces and madvise
+ro.iorapd.enable=true
