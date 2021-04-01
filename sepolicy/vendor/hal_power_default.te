@@ -1,3 +1,5 @@
+typeattribute hal_power_default mlstrustedsubject;
+
 allow hal_power_default sysfs_touchpanel:dir search;
 allow hal_power_default sysfs_touchpanel:file rw_file_perms;
 
@@ -10,5 +12,9 @@ allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
 allow hal_power_default device_latency:chr_file rw_file_perms;
 allow hal_power_default latency_device:chr_file rw_file_perms;
 allow hal_power_default proc:{ file lnk_file } rw_file_perms;
+
+# Set scheduling info for apps (for adpf)
+allow hal_power_default appdomain:process { getsched setsched };
+allow hal_power_default self:capability sys_nice;
 
 set_prop(hal_power_default, vendor_power_prop)
