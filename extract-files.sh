@@ -83,6 +83,16 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
             sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${2}"
             ;;
+        lib/libwfdaudioclient.so)
+            "${PATCHELF}" --set-soname "libwfdaudioclient.so" "${2}"
+            ;;
+        lib/libwfdmediautils.so)
+            "${PATCHELF}" --set-soname "libwfdmediautils.so" "${2}"
+            ;;
+        lib/libwfdmmsink.so)
+            "${PATCHELF}" --add-needed "libwfdaudioclient.so" "${2}"
+            "${PATCHELF}" --add-needed "libwfdmediautils.so" "${2}"
+            ;;
     esac
 }
 
