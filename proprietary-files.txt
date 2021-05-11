@@ -492,30 +492,28 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so|82343bf59ed284de116afe4a94ec42
 vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so|c79ce389573c3ff1708e9699989cae1d122cbc90
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so|ebd8c3f0ebcccf5a8d5adbcd45f618e92c110a58
 
-# Radio - IMS - from LA.UM.9.6.2.r1-02500-89xx.0
--system_ext/priv-app/ims/ims.apk|fcc65426a824fcf4a79d22dc6989d830610596bd
+# Radio - IMS - from LA.UM.9.6.2.r1-04100-89xx.0
+-system_ext/priv-app/ims/ims.apk|230315f38d7c2fc6c9d83bb6ec1f8f59254090cf
 system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so|c1ab8dc5de956caf0060a33922d402d0ec6c732e
 system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so|f86a87d2fef32f7176d697a7aad346b8c5be3d00
 system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so|620f8c0af756a026ac78750adc4fe0590c4e9d45
-system_ext/lib64/lib-imscamera.so|53b2b35ac8bd114ced7771d71d9632fe91776989
-system_ext/lib64/lib-imsvideocodec.so|9c79def1f8666adcd82ebc6209ffe112735eb0e7
-system_ext/lib64/lib-imsvt.so|72c6806032e432c4b40ab117fc1d5a34635bf114
-system_ext/lib64/lib-imsvtextutils.so|69a9466876cea5148dcde702c00c75bea0c98520
-system_ext/lib64/lib-imsvtutils.so|d1bc74527ac502a0b31bfaed47c97ce36d41cd78
+system_ext/lib64/lib-imscamera.so|2b7c94e2d070d71841e558393c881d13affb7438
+system_ext/lib64/lib-imsvideocodec.so|ac7089da1c9824e367b1137be8bf4e496974f245
+system_ext/lib64/lib-imsvt.so|205b5d3b47e9a990a950e05d5a7f2d006871d3cf
+system_ext/lib64/lib-imsvtextutils.so|0aadc4666d6e68429fcdd2db4bff1bf48538a155
+system_ext/lib64/lib-imsvtutils.so|d3a1a558664700fed951b8c63c900efcfc680830
 system_ext/lib64/libimscamera_jni.so|217354bfe6d1e1736572218b1a34468937544350
 system_ext/lib64/libimsmedia_jni.so|c804adc4d7224303a53f6270e6c1cf9319008a05
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|7157c5a2852683df0a50a588a09b7e5a0c5688da
-vendor/bin/ims_rtp_daemon|74f1d2ec4bc187278e07d4e9a37c3f58505804da
+vendor/bin/ims_rtp_daemon|a0a0e2986c9d3e817551fe9a10c1b464dd5a9dc1
 vendor/etc/seccomp_policy/imsrtp.policy|7ea8b4012da7bde98fc91bd882185b32784793cc
-vendor/lib/vendor.qti.imsrtpservice@3.0-service-Impl.so|e0149a151998f25d685e10a7efca2ae8c6712c27
-vendor/lib/vendor.qti.imsrtpservice@3.0.so|1333f4cb493bfcf6f9c7f5d6b15c3af38b681373
 vendor/lib64/com.qualcomm.qti.uceservice@2.0.so|1faf0fe6af1f6b71c8c812c35cb37e110777a8b2
 vendor/lib64/com.qualcomm.qti.uceservice@2.1.so|2e8adbfac57d37698e111b706f1fde665d588f70
 vendor/lib64/com.qualcomm.qti.uceservice@2.2.so|92da73814ba6c14502d5f43862339f7061e11894
-vendor/lib64/lib-imsvtcore.so|279ab63ed4f6cc5473bfb7cddf99b35d9353171e
+vendor/lib64/lib-imsvtcore.so|923a4839e6951b713162d35954e57fcbd693873c
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|58fcc2a491826ecc3ca3cbc72b20f46c9108e0a4
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|5d71371d3eb10481f95a018481dfb62a5929110d
-vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|ac8045bd314d9cb87120296f1d6fddeb98de19fd
+vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|31759a9a5f6045b1139d00103044d9b55607eac1
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161cc1bcf
 
 # Soter - from jason V12.0.1.0.PCHCNXM
