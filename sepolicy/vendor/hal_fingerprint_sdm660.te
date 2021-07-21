@@ -18,6 +18,7 @@ allow hal_fingerprint_sdm660 fingerprintd_data_file:dir rw_dir_perms;
 allow hal_fingerprint_sdm660 fingerprintd_data_file:file create_file_perms;
 
 allow hal_fingerprint_sdm660 sysfs_fingerprint:file rw_file_perms;
+allow hal_fingerprint_sdm660 sysfs_devfreq:dir { search };
 
 allow hal_fingerprint_sdm660 self:netlink_socket create_socket_perms_no_ioctl;
 

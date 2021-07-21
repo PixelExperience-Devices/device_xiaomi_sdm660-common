@@ -1,1 +1,3 @@
 set_prop(hal_sensors_default, camera_prop)
+
+allow hal_sensors_default default_prop:file { read };
