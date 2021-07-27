@@ -1,0 +1,10 @@
+allow untrusted_app sysfs_battery_supply:dir { search };
+dontaudit untrusted_app virtual_ab_prop:file { read };
+
+dontaudit untrusted_app_27 app_data_file:file { execute  execute_no_trans };
+
+dontaudit untrusted_app_29 app_data_file:file { execute };
+dontaudit untrusted_app_29 mnt_sdcard_file:lnk_file { read };
+dontaudit untrusted_app_29 proc_version:file { read };
+dontaudit untrusted_app_29 proc:file { read };
+dontaudit untrusted_app_29 vendor_persist_camera_prop:file { read };

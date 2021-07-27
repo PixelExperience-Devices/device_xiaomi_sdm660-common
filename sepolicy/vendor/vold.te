@@ -1,0 +1,2 @@
+allow vold vendor_apex_file:file getattr;
+allow vold sysfs_mmc_host:file write;
