@@ -41,6 +41,7 @@ namespace impl {
 namespace pixel {
 
 constexpr char kPowerHalStateProp[] = "vendor.powerhal.state";
+constexpr char kPowerHalAudioProp[] = "vendor.powerhal.audio";
 constexpr char kPowerHalRenderingProp[] = "vendor.powerhal.rendering";
 
 Power::Power(std::shared_ptr<HintManager> hm)
@@ -57,6 +58,12 @@ Power::Power(std::shared_ptr<HintManager> hm)
         mSustainedPerfModeOn = true;
     } else {
         ALOGI("Initialize PowerHAL");
+    }
+
+    state = ::android::base::GetProperty(kPowerHalAudioProp, "");
+    if (state == "AUDIO_STREAMING_LOW_LATENCY") {
+        ALOGI("Initialize with AUDIO_LOW_LATENCY on");
+        mHintManager->DoHint(state);
     }
 
     state = ::android::base::GetProperty(kPowerHalRenderingProp, "");
@@ -101,6 +108,8 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             [[fallthrough]];
         case Mode::DISPLAY_INACTIVE:
             [[fallthrough]];
+        case Mode::AUDIO_STREAMING_LOW_LATENCY:
+            [[fallthrough]];
         default:
             if (enabled) {
                 mHintManager->DoHint(toString(type));
@@ -137,6 +146,8 @@ ndk::ScopedAStatus Power::setBoost(Boost type, int32_t durationMs) {
         case Boost::DISPLAY_UPDATE_IMMINENT:
             [[fallthrough]];
         case Boost::ML_ACC:
+            [[fallthrough]];
+        case Boost::AUDIO_LAUNCH:
             [[fallthrough]];
         default:
             if (mSustainedPerfModeOn) {
