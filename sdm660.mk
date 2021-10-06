@@ -116,8 +116,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     org.ifaa.android.manager
 
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
+# Build
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+RELAX_USES_LIBRARY_CHECK := true
 
 # Bluetooth
 PRODUCT_PACKAGES += \
