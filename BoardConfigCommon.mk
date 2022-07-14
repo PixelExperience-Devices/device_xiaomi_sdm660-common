@@ -12,6 +12,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
+BOARD_VENDOR := xiaomi
 
 # Architecture
 TARGET_ARCH := arm64
