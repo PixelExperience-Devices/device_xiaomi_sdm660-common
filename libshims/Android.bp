@@ -13,3 +13,10 @@ cc_library_shared {
     ],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libmiwatermark_shim",
+    srcs: ["miwatermark_shim.cpp"],
+
+    vendor: true,
+}
