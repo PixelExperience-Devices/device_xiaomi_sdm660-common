@@ -8,3 +8,9 @@ dontaudit untrusted_app_29 mnt_sdcard_file:lnk_file { read };
 dontaudit untrusted_app_29 proc_version:file { read };
 dontaudit untrusted_app_29 proc:file { read };
 dontaudit untrusted_app_29 vendor_persist_camera_prop:file { read };
+
+allow untrusted_app vendor_persist_camera_prop:file { read };
+allow untrusted_app app_data_file:file { execute };
+allow untrusted_app proc_zoneinfo:file { read };
+allow untrusted_app vendor_persist_camera_prop:file { read };
+allow untrusted_app zygote:unix_stream_socket { getopt };
