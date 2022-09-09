@@ -250,6 +250,8 @@ on charger
     start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
     start vendor.power_off_alarm
+    chown system system /sys/class/leds/red/brightness
+    write /sys/class/leds/red/brightness 255
 
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
      class main
