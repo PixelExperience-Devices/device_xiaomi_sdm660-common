@@ -2,13 +2,13 @@
   {
     "repository" : "vendor_xiaomi_sdm660-common",
     "target_path": "vendor/xiaomi/sdm660-common",
-    "branch"     : "twelve",
+    "branch"     : "thirteen",
     "remote"     : "pixel-devices-blobs"
   },
   { 
     "repository" : "hardware_xiaomi",
     "target_path": "hardware/xiaomi",
     "remote"     : "pixel",
-    "branch"     : "twelve"
+    "branch"     : "thirteen"
   }
 ]
