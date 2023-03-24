@@ -10,5 +10,11 @@
     "target_path": "hardware/xiaomi",
     "remote"     : "pixel",
     "branch"     : "thirteen"
+  },
+  { 
+    "repository" : "PixelExperience-Devices/kernel_xiaomi_sdm660", 
+    "target_path": "kernel/xiaomi/sdm660",
+    "remote"     : "github",
+    "branch"     : "thirteen"
   }
 ]
